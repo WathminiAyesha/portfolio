@@ -7,7 +7,7 @@ import { Projects } from './components/sections/Projects';
 import { QAShowcase } from './components/sections/QAShowcase';
 import { Skills } from './components/sections/Skills';
 import { Certifications } from './components/sections/Certifications';
-import { Experience } from './components/sections/Experience';
+import { Community } from './components/sections/Community';
 import { Education } from './components/sections/Education';
 import { Contact } from './components/sections/Contact';
 
@@ -31,14 +31,14 @@ export const App: React.FC = () => {
         {/* 4. Dedicated Quality Assurance Showcase */}
         <QAShowcase />
 
-        {/* 8. Categorized Skills */}
+        {/* 5. Categorized Skills */}
         <Skills />
 
-        {/* 9. Verified Certifications */}
+        {/* 6. Verified Certifications */}
         <Certifications />
 
-        {/* 10. Beyond the Classroom: Experience & Volunteering */}
-        <Experience />
+        {/* 7. Community & Leadership */}
+        <Community />
 
         {/* 11. Education */}
         <Education />
