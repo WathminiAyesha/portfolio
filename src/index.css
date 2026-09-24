@@ -13,6 +13,7 @@
 
   html {
     scroll-behavior: smooth;
+    font-size: 17px;
   }
 
   body {
@@ -20,6 +21,8 @@
     color: #f9f6f0;
     font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
     overflow-x: hidden;
+    font-size: 1.05rem;
+    line-height: 1.7;
   }
 
   /* Custom Smooth Scrollbar */

@@ -3,10 +3,7 @@ import { Navbar } from './components/layout/Navbar';
 import { Footer } from './components/layout/Footer';
 import { Hero } from './components/sections/Hero';
 import { About } from './components/sections/About';
-import { Journey } from './components/sections/Journey';
-import { ProjectVMas } from './components/sections/ProjectVMas';
-import { ProjectTechStack } from './components/sections/ProjectTechStack';
-import { ProjectGallery } from './components/sections/ProjectGallery';
+import { Projects } from './components/sections/Projects';
 import { QAShowcase } from './components/sections/QAShowcase';
 import { Skills } from './components/sections/Skills';
 import { Certifications } from './components/sections/Certifications';
@@ -28,19 +25,10 @@ export const App: React.FC = () => {
         {/* 2. About Me */}
         <About />
 
-        {/* 3. My Journey */}
-        <Journey />
+        {/* 3. Featured Projects */}
+        <Projects />
 
-        {/* 4. Featured Project: V-Mas Showcase */}
-        <ProjectVMas />
-
-        {/* 5. V-Mas Technology Visualization */}
-        <ProjectTechStack />
-
-        {/* 6. V-Mas Application Screenshot Gallery */}
-        <ProjectGallery />
-
-        {/* 7. Dedicated Quality Assurance Showcase */}
+        {/* 4. Dedicated Quality Assurance Showcase */}
         <QAShowcase />
 
         {/* 8. Categorized Skills */}

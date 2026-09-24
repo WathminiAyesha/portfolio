@@ -19,9 +19,9 @@ export const Hero: React.FC = () => {
           <div className="lg:col-span-7 text-center lg:text-left space-y-6">
             
             {/* Tag Badge */}
-            <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-maroon-900/60 border border-maroon-700/60 shadow-maroon-sm backdrop-blur-md">
-              <Sparkles className="w-3.5 h-3.5 text-rose-soft" />
-              <span className="text-[11px] sm:text-xs font-mono font-semibold tracking-wider uppercase text-rose-soft">
+            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-maroon-900/60 border border-maroon-700/60 shadow-maroon-sm backdrop-blur-md">
+              <Sparkles className="w-4 h-4 text-rose-soft" />
+              <span className="text-xs sm:text-sm font-mono font-semibold tracking-wider uppercase text-rose-soft">
                 QA • ML • DATA • SOFTWARE
               </span>
             </div>
@@ -31,7 +31,7 @@ export const Hero: React.FC = () => {
               <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-warm-50 font-serif">
                 {personalInfo.name}
               </h1>
-              <p className="text-base sm:text-lg font-mono text-rose-dusty font-medium tracking-wide">
+              <p className="text-lg sm:text-xl font-mono text-rose-dusty font-medium tracking-wide">
                 {personalInfo.role} • {personalInfo.university}
               </p>
             </div>
@@ -42,15 +42,15 @@ export const Hero: React.FC = () => {
             </h2>
 
             {/* Supporting Text */}
-            <p className="text-base sm:text-lg text-rose-soft/90 max-w-2xl mx-auto lg:mx-0 font-sans leading-relaxed">
+            <p className="text-lg sm:text-xl text-rose-soft/90 max-w-2xl mx-auto lg:mx-0 font-sans leading-relaxed">
               {personalInfo.bio}
             </p>
 
             {/* Action Buttons */}
             <div className="flex flex-wrap items-center justify-center lg:justify-start gap-4 pt-2">
               <a
-                href="#vmas"
-                className="inline-flex items-center gap-2 px-7 py-3.5 rounded-xl font-semibold text-sm tracking-wide bg-gradient-to-r from-maroon-900 via-maroon-800 to-wine text-white border border-maroon-600/70 shadow-maroon hover:shadow-maroon-lg hover:border-rose-dusty transition-all duration-300 transform hover:-translate-y-0.5"
+                href="#projects"
+                className="inline-flex items-center gap-2.5 px-8 py-4 rounded-xl font-semibold text-base tracking-wide bg-gradient-to-r from-maroon-900 via-maroon-800 to-wine text-white border border-maroon-600/70 shadow-maroon hover:shadow-maroon-lg hover:border-rose-dusty transition-all duration-300 transform hover:-translate-y-0.5"
               >
                 <span>Explore My Work</span>
                 <ArrowDown className="w-4 h-4 text-rose-soft animate-bounce" />
@@ -59,7 +59,7 @@ export const Hero: React.FC = () => {
               <a
                 href={personalInfo.cvPath}
                 download="Wathmini-Ayesha-CV.pdf"
-                className="inline-flex items-center gap-2 px-7 py-3.5 rounded-xl font-semibold text-sm tracking-wide bg-charcoal-900/80 hover:bg-maroon-950 text-rose-soft hover:text-white border border-maroon-800/80 hover:border-maroon-600 shadow-sm transition-all duration-300 transform hover:-translate-y-0.5"
+                className="inline-flex items-center gap-2.5 px-8 py-4 rounded-xl font-semibold text-base tracking-wide bg-charcoal-900/80 hover:bg-maroon-950 text-rose-soft hover:text-white border border-maroon-800/80 hover:border-maroon-600 shadow-sm transition-all duration-300 transform hover:-translate-y-0.5"
               >
                 <FileDown className="w-4 h-4 text-rose-dusty" />
                 <span>Download CV</span>
@@ -73,31 +73,31 @@ export const Hero: React.FC = () => {
                   href={personalInfo.socials.github}
                   target="_blank"
                   rel="noreferrer"
-                  className="p-2.5 rounded-xl bg-charcoal-900/80 border border-maroon-800/60 text-rose-soft hover:text-white hover:bg-maroon-900/60 hover:border-maroon-600 transition-all"
+                  className="p-3 rounded-xl bg-charcoal-900/80 border border-maroon-800/60 text-rose-soft hover:text-white hover:bg-maroon-900/60 hover:border-maroon-600 transition-all"
                   aria-label="GitHub Profile"
                 >
-                  <Github className="w-4 h-4" />
+                  <Github className="w-5 h-5" />
                 </a>
                 <a
                   href={personalInfo.socials.linkedin}
                   target="_blank"
                   rel="noreferrer"
-                  className="p-2.5 rounded-xl bg-charcoal-900/80 border border-maroon-800/60 text-rose-soft hover:text-white hover:bg-maroon-900/60 hover:border-maroon-600 transition-all"
+                  className="p-3 rounded-xl bg-charcoal-900/80 border border-maroon-800/60 text-rose-soft hover:text-white hover:bg-maroon-900/60 hover:border-maroon-600 transition-all"
                   aria-label="LinkedIn Profile"
                 >
-                  <Linkedin className="w-4 h-4" />
+                  <Linkedin className="w-5 h-5" />
                 </a>
                 <a
                   href={`mailto:${personalInfo.socials.email}`}
-                  className="p-2.5 rounded-xl bg-charcoal-900/80 border border-maroon-800/60 text-rose-soft hover:text-white hover:bg-maroon-900/60 hover:border-maroon-600 transition-all"
+                  className="p-3 rounded-xl bg-charcoal-900/80 border border-maroon-800/60 text-rose-soft hover:text-white hover:bg-maroon-900/60 hover:border-maroon-600 transition-all"
                   aria-label="Send Email"
                 >
-                  <Mail className="w-4 h-4" />
+                  <Mail className="w-5 h-5" />
                 </a>
               </div>
 
-              <div className="text-xs text-rose-soft/70 font-mono flex items-center gap-2">
-                <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse" />
+              <div className="text-sm text-rose-soft/80 font-mono flex items-center gap-2">
+                <span className="w-2.5 h-2.5 rounded-full bg-emerald-500 animate-pulse" />
                 <span>Open for QA & Software Internships</span>
               </div>
             </div>
@@ -134,21 +134,15 @@ export const Hero: React.FC = () => {
                   <div className="absolute inset-0 bg-gradient-to-t from-charcoal-950/90 via-transparent to-maroon-950/20 pointer-events-none" />
 
                   {/* Corner Accent Badge */}
-                  <div className="absolute bottom-4 left-4 right-4 p-3 rounded-xl bg-charcoal-900/90 backdrop-blur-md border border-maroon-700/60 shadow-lg flex items-center justify-between">
+                  <div className="absolute bottom-4 left-4 right-4 p-3.5 rounded-xl bg-charcoal-900/90 backdrop-blur-md border border-maroon-700/60 shadow-lg flex items-center justify-between">
                     <div>
-                      <h3 className="text-xs font-bold text-warm-50 font-serif">Wathmini Ayesha</h3>
-                      <p className="text-[10px] font-mono text-rose-soft/80">Information Systems Undergraduate</p>
+                      <h3 className="text-sm sm:text-base font-bold text-warm-50 font-serif">Wathmini Ayesha</h3>
+                      <p className="text-xs font-mono text-rose-soft/80">Information Systems Undergraduate</p>
                     </div>
-                    <span className="px-2 py-0.5 rounded text-[10px] font-mono bg-maroon-900 text-rose-soft border border-maroon-700">
+                    <span className="px-2.5 py-1 rounded text-xs font-mono bg-maroon-900 text-rose-soft border border-maroon-700">
                       SUSL
                     </span>
                   </div>
-                </div>
-
-                {/* Subtle caption beneath photo */}
-                <div className="mt-3 px-2 flex items-center justify-between text-[11px] font-mono text-rose-soft/60">
-                  <span>Photo Profile</span>
-                  <span>Signature Burgundy Identity</span>
                 </div>
               </div>
 

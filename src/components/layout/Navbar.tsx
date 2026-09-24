@@ -5,8 +5,7 @@ import { personalInfo } from '../../data/portfolioData';
 const navItems = [
   { label: 'Home', href: '#home' },
   { label: 'About', href: '#about' },
-  { label: 'Journey', href: '#journey' },
-  { label: 'V-Mas', href: '#vmas' },
+  { label: 'Projects', href: '#projects' },
   { label: 'QA', href: '#qa' },
   { label: 'Skills', href: '#skills' },
   { label: 'Certifications', href: '#certifications' },
@@ -55,33 +54,33 @@ export const Navbar: React.FC = () => {
           href="#home"
           className="group flex items-center gap-3 focus:outline-none"
         >
-          <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-maroon-800 to-plum-dark flex items-center justify-center border border-maroon-600/50 shadow-maroon-sm group-hover:border-rose-dusty/80 transition-all duration-300">
-            <span className="font-serif font-bold text-lg text-warm-50 group-hover:scale-105 transition-transform">
+          <div className="w-11 h-11 rounded-xl bg-gradient-to-br from-maroon-800 to-plum-dark flex items-center justify-center border border-maroon-600/50 shadow-maroon-sm group-hover:border-rose-dusty/80 transition-all duration-300">
+            <span className="font-serif font-bold text-xl text-warm-50 group-hover:scale-105 transition-transform">
               W
             </span>
           </div>
           <div className="flex flex-col">
-            <span className="font-serif font-bold text-base md:text-lg tracking-wide text-warm-50 group-hover:text-rose-soft transition-colors">
+            <span className="font-serif font-bold text-lg md:text-xl tracking-wide text-warm-50 group-hover:text-rose-soft transition-colors">
               {personalInfo.name}
             </span>
-            <span className="text-[11px] font-mono tracking-wider uppercase text-rose-soft/70">
+            <span className="text-xs font-mono tracking-wider uppercase text-rose-soft/80">
               Information Systems
             </span>
           </div>
         </a>
 
         {/* Desktop Navigation */}
-        <nav className="hidden xl:flex items-center gap-1 bg-charcoal-900/60 p-1.5 rounded-full border border-maroon-900/40 backdrop-blur-sm shadow-inner">
+        <nav className="hidden xl:flex items-center gap-1.5 bg-charcoal-900/60 p-1.5 rounded-full border border-maroon-900/40 backdrop-blur-sm shadow-inner">
           {navItems.map((item) => {
             const isActive = activeSection === item.href.substring(1);
             return (
               <a
                 key={item.label}
                 href={item.href}
-                className={`px-3.5 py-1.5 rounded-full text-xs font-medium tracking-wide transition-all duration-200 ${
+                className={`px-4 py-2 rounded-full text-sm font-medium tracking-wide transition-all duration-200 ${
                   isActive
-                    ? 'bg-gradient-to-r from-maroon-900 to-maroon-800 text-warm-50 shadow-maroon-sm border border-maroon-600/60'
-                    : 'text-warm-300/80 hover:text-white hover:bg-maroon-950/50'
+                    ? 'bg-gradient-to-r from-maroon-900 to-maroon-800 text-warm-50 shadow-maroon-sm border border-maroon-600/60 font-semibold'
+                    : 'text-warm-300/90 hover:text-white hover:bg-maroon-950/50'
                 }`}
               >
                 {item.label}
@@ -95,9 +94,9 @@ export const Navbar: React.FC = () => {
           <a
             href={personalInfo.cvPath}
             download="Wathmini-Ayesha-CV.pdf"
-            className="inline-flex items-center gap-2 px-4 py-2 rounded-xl text-xs font-semibold tracking-wider uppercase bg-maroon-900/60 hover:bg-maroon-800 text-rose-soft hover:text-white border border-maroon-700/60 hover:border-rose-dusty/80 shadow-maroon-sm transition-all duration-300 hover:shadow-maroon"
+            className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl text-xs sm:text-sm font-semibold tracking-wider uppercase bg-maroon-900/60 hover:bg-maroon-800 text-rose-soft hover:text-white border border-maroon-700/60 hover:border-rose-dusty/80 shadow-maroon-sm transition-all duration-300 hover:shadow-maroon"
           >
-            <FileDown className="w-3.5 h-3.5 text-rose-dusty" />
+            <FileDown className="w-4 h-4 text-rose-dusty" />
             <span>Download CV</span>
           </a>
         </div>
@@ -125,7 +124,7 @@ export const Navbar: React.FC = () => {
                   key={item.label}
                   href={item.href}
                   onClick={() => setMobileMenuOpen(false)}
-                  className={`px-4 py-2.5 rounded-xl text-xs font-medium tracking-wide transition-all ${
+                  className={`px-4 py-2.5 rounded-xl text-sm font-medium tracking-wide transition-all ${
                     isActive
                       ? 'bg-maroon-800 text-white font-semibold border border-maroon-600'
                       : 'text-warm-300 hover:bg-maroon-950/60 hover:text-white'

@@ -16,8 +16,8 @@ export const SectionHeader: React.FC<SectionHeaderProps> = ({
   return (
     <div className={`mb-12 md:mb-16 ${align === 'center' ? 'text-center mx-auto' : 'text-left'} max-w-3xl`}>
       {badge && (
-        <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full text-xs font-semibold tracking-wider uppercase bg-maroon-900/50 text-rose-soft border border-maroon-700/50 shadow-maroon-sm mb-4">
-          <span className="w-1.5 h-1.5 rounded-full bg-rose-dusty animate-pulse"></span>
+        <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full text-xs sm:text-sm font-semibold tracking-wider uppercase bg-maroon-900/50 text-rose-soft border border-maroon-700/50 shadow-maroon-sm mb-4">
+          <span className="w-2 h-2 rounded-full bg-rose-dusty animate-pulse"></span>
           {badge}
         </div>
       )}
@@ -25,7 +25,7 @@ export const SectionHeader: React.FC<SectionHeaderProps> = ({
         {title}
       </h2>
       {subtitle && (
-        <p className="mt-4 text-base md:text-lg text-rose-soft/80 leading-relaxed font-sans">
+        <p className="mt-4 text-lg md:text-xl text-rose-soft/85 leading-relaxed font-sans">
           {subtitle}
         </p>
       )}
