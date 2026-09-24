@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 750" width="1200" height="750">
+    <defs>
+      <linearGradient id="scBg" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#14060a"/>
+        <stop offset="50%" stop-color="#230a13"/>
+        <stop offset="100%" stop-color="#0e0407"/>
+      </linearGradient>
+      <linearGradient id="topBar" x1="0%" y1="0%" x2="100%" y2="0%">
+        <stop offset="0%" stop-color="#5c0d1b"/>
+        <stop offset="100%" stop-color="#800020"/>
+      </linearGradient>
+    </defs>
+    <!-- Window Frame -->
+    <rect width="1200" height="750" rx="16" fill="url(#scBg)" stroke="#5c0d1b" stroke-width="2"/>
+    
+    <!-- App Header Bar -->
+    <rect width="1200" height="60" rx="16" fill="#1c0910"/>
+    <circle cx="35" cy="30" r="7" fill="#cf4869"/>
+    <circle cx="60" cy="30" r="7" fill="#b62e51"/>
+    <circle cx="85" cy="30" r="7" fill="#5c0d1b"/>
+    <rect x="300" y="15" width="600" height="30" rx="6" fill="#2d101c" stroke="#5c0d1b" stroke-width="1"/>
+    <text x="600" y="35" font-family="'JetBrains Mono', monospace" font-size="13" fill="#e3778f" text-anchor="middle">vmas.app/dashboard • Vehicle Registration Form</text>
+    
+    <!-- Sidebar Preview -->
+    <rect x="25" y="85" width="220" height="635" rx="12" fill="#1a070e" stroke="#3b1224" stroke-width="1"/>
+    <rect x="45" y="110" width="180" height="40" rx="8" fill="url(#topBar)"/>
+    <text x="135" y="135" font-family="'Plus Jakarta Sans', sans-serif" font-size="14" font-weight="700" fill="#ffffff" text-anchor="middle">V-MAS SYSTEM</text>
+    
+    <rect x="45" y="175" width="180" height="32" rx="6" fill="#2d101c"/>
+    <rect x="45" y="220" width="180" height="32" rx="6" fill="#240c16"/>
+    <rect x="45" y="265" width="180" height="32" rx="6" fill="#240c16"/>
+    <rect x="45" y="310" width="180" height="32" rx="6" fill="#240c16"/>
+    
+    <!-- Main Content Area -->
+    <rect x="270" y="85" width="905" height="635" rx="12" fill="#120509" stroke="#3b1224" stroke-width="1"/>
+    
+    <!-- Header banner in app -->
+    <rect x="300" y="115" width="845" height="120" rx="12" fill="url(#topBar)" fill-opacity="0.3" stroke="#800020" stroke-width="1"/>
+    <text x="330" y="160" font-family="'Plus Jakarta Sans', sans-serif" font-size="24" font-weight="700" fill="#fdf2f4">Vehicle Registration Form</text>
+    <text x="330" y="195" font-family="'Plus Jakarta Sans', sans-serif" font-size="15" fill="#f0a8b7">Onboarding workflow with chassis specs and validation</text>
+
+    <!-- Content Mock Cards -->
+    <rect x="300" y="260" width="265" height="150" rx="10" fill="#1c0a12" stroke="#5c0d1b" stroke-width="1"/>
+    <text x="325" y="295" font-family="'Plus Jakarta Sans', sans-serif" font-size="13" fill="#e3778f">ACTIVE STATUS</text>
+    <text x="325" y="340" font-family="'Plus Jakarta Sans', sans-serif" font-size="32" font-weight="800" fill="#fdf2f4">100%</text>
+    <text x="325" y="375" font-family="'Plus Jakarta Sans', sans-serif" font-size="12" fill="#d48b9b">Compliance verified</text>
+
+    <rect x="590" y="260" width="265" height="150" rx="10" fill="#1c0a12" stroke="#5c0d1b" stroke-width="1"/>
+    <text x="615" y="295" font-family="'Plus Jakarta Sans', sans-serif" font-size="13" fill="#e3778f">SERVICE INTERVAL</text>
+    <text x="615" y="340" font-family="'Plus Jakarta Sans', sans-serif" font-size="32" font-weight="800" fill="#fdf2f4">5,000 km</text>
+    <text x="615" y="375" font-family="'Plus Jakarta Sans', sans-serif" font-size="12" fill="#d48b9b">Next schedule logged</text>
+
+    <rect x="880" y="260" width="265" height="150" rx="10" fill="#1c0a12" stroke="#5c0d1b" stroke-width="1"/>
+    <text x="905" y="295" font-family="'Plus Jakarta Sans', sans-serif" font-size="13" fill="#e3778f">SECURITY LEVEL</text>
+    <text x="905" y="340" font-family="'Plus Jakarta Sans', sans-serif" font-size="32" font-weight="800" fill="#fdf2f4">JWT RBAC</text>
+    <text x="905" y="375" font-family="'Plus Jakarta Sans', sans-serif" font-size="12" fill="#d48b9b">Role-based clearance</text>
+
+    <!-- Data Table / Mock View -->
+    <rect x="300" y="435" width="845" height="255" rx="10" fill="#18070f" stroke="#380e1a" stroke-width="1"/>
+    <rect x="300" y="435" width="845" height="42" rx="10" fill="#250b16"/>
+    <text x="330" y="462" font-family="'JetBrains Mono', monospace" font-size="13" font-weight="600" fill="#f7ced6">RECORD ID</text>
+    <text x="500" y="462" font-family="'JetBrains Mono', monospace" font-size="13" font-weight="600" fill="#f7ced6">TELEMETRY / METRIC</text>
+    <text x="750" y="462" font-family="'JetBrains Mono', monospace" font-size="13" font-weight="600" fill="#f7ced6">EXPIRY / SCHEDULE</text>
+    <text x="1020" y="462" font-family="'JetBrains Mono', monospace" font-size="13" font-weight="600" fill="#f7ced6">STATE</text>
+
+    <line x1="300" y1="520" x2="1145" y2="520" stroke="#3b1224" stroke-width="1"/>
+    <text x="330" y="505" font-family="'JetBrains Mono', monospace" font-size="13" fill="#f9f5f0">VM-2026-089</text>
+    <text x="500" y="505" font-family="'Plus Jakarta Sans', sans-serif" font-size="13" fill="#f9f5f0">Primary Maintenance Cycle</text>
+    <text x="750" y="505" font-family="'Plus Jakarta Sans', sans-serif" font-size="13" fill="#f0a8b7">Valid (30 Days Remaining)</text>
+    <rect x="1015" y="490" width="75" height="24" rx="12" fill="#5c0d1b"/>
+    <text x="1052" y="506" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" font-weight="700" fill="#fdf2f4" text-anchor="middle">ACTIVE</text>
+
+    <line x1="300" y1="565" x2="1145" y2="565" stroke="#3b1224" stroke-width="1"/>
+    <text x="330" y="550" font-family="'JetBrains Mono', monospace" font-size="13" fill="#f9f5f0">DOC-INS-442</text>
+    <text x="500" y="550" font-family="'Plus Jakarta Sans', sans-serif" font-size="13" fill="#f9f5f0">Comprehensive Insurance Policy</text>
+    <text x="750" y="550" font-family="'Plus Jakarta Sans', sans-serif" font-size="13" fill="#f0a8b7">Renewed & Uploaded</text>
+    <rect x="1015" y="535" width="75" height="24" rx="12" fill="#5c0d1b"/>
+    <text x="1052" y="551" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" font-weight="700" fill="#fdf2f4" text-anchor="middle">VERIFIED</text>
+
+    <text x="722" y="650" font-family="'Plus Jakarta Sans', sans-serif" font-size="13" fill="#cf4869" text-anchor="middle">
+      * Add V-Mas Screenshot: Replace with your actual application screenshot in public/images/projects/vmas/
+    </text>
+  </svg>
